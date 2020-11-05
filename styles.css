@@ -16,7 +16,7 @@ body {
   transform: rotate(-90deg);
 }
 
-.rotate-right {
+.rotate-east {
   transform: rotate(0deg);
 }
 
@@ -24,6 +24,6 @@ body {
   transform: rotate(90deg);
 }
 
-.rotate-left {
+.rotate-west {
   transform: rotate(180deg);
 }
