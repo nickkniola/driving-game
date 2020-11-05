@@ -10,6 +10,7 @@ body {
 }
 
 .car {
+  width: 8rem;
   position: absolute;
   left: 0;
   top: 0;
