@@ -1,0 +1,12 @@
+body {
+  margin: 0;
+}
+
+.container {
+  height: 100vh;
+  background-color: #4CDA43;
+}
+
+.car {
+  width: 8rem;
+}
