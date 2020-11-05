@@ -1,4 +1,4 @@
-var dirObj = {direction: 'rotate-right'};
+var dirObj = {direction: 'rotate-right', locationX: 0, locationY: 0};
 
 var car = document.querySelector('.car');
 document.addEventListener('keydown', changeDirection);
