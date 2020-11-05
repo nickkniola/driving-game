@@ -9,4 +9,21 @@ body {
 
 .car {
   width: 8rem;
+  transition: 0.3s;
+}
+
+.rotate-north {
+  transform: rotate(-90deg);
+}
+
+.rotate-east {
+  transform: rotate(0deg);
+}
+
+.rotate-south {
+  transform: rotate(90deg);
+}
+
+.rotate-west {
+  transform: rotate(180deg);
 }
