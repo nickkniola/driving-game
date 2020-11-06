@@ -1,4 +1,5 @@
-var dirObj = {direction: 'rotate-right', locationX: 0, locationY: 0};
+var dirObj = { direction: 'rotate-right', locationX: 0, locationY: 0, carMoving: false};
+
 
 var car = document.querySelector('.car');
 document.addEventListener('keydown', changeDirection);
@@ -16,6 +17,7 @@ function changeDirection(event) {
   car.className = 'car ' + dirObj.direction;
 
   if (event.code === 'Space') {
+
     setInterval(moveCar, 16);
   }
 }
