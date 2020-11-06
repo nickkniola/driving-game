@@ -5,11 +5,15 @@ body {
 .container {
   height: 100vh;
   background-color: #4CDA43;
+  position: relative;
 }
 
 .car {
   width: 8rem;
   transition: 0.3s;
+  position: absolute;
+  top: 0px;
+  left: 0px;
 }
 
 .rotate-north {
