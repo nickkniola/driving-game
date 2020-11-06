@@ -1,4 +1,4 @@
-var dirObj = { direction: 'rotate-right', locationX: 0, locationY: 0, carMoving: false, intervalID: null};
+var dirObj = { direction: 'rotate-east', locationX: 0, locationY: 0, carMoving: false, intervalID: null};
 
 
 var car = document.querySelector('.car');
@@ -28,11 +28,11 @@ function changeDirection(event) {
 
 function moveCar() {
   if (dirObj.direction === 'rotate-north') {
-    dirObj.locationY += 4;
+    dirObj.locationY -= 4;
   } else if (dirObj.direction === 'rotate-east') {
     dirObj.locationX += 4;
   } else if (dirObj.direction === 'rotate-south') {
-    dirObj.locationY -= 4;
+    dirObj.locationY += 4;
   } else if (dirObj.direction === 'rotate-west') {
     dirObj.locationX -= 4
   }
