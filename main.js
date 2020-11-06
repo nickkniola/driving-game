@@ -17,7 +17,7 @@ function changeDirection(event) {
   car.className = 'car ' + dirObj.direction;
 
   if (event.code === 'Space') {
-
+    !carMoving;
     setInterval(moveCar, 16);
   }
 }
