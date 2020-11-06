@@ -14,8 +14,14 @@ function changeDirection(event) {
     dirObj.direction = 'rotate-west';
   }
   car.className = 'car ' + dirObj.direction;
-  console.log(event.code);
+
   if (event.code === 'Space') {
-    car.style.cssText = 'top: 400px; left: 200px';
+    console.log('space clicked')
+    setInterval(moveCar, 16);
   }
+}
+
+function moveCar() {
+  dirObj.locationX += 4;
+  car.style.cssText = 'top: ' + dirObj.locationY + 'px; left: ' +  dirObj.locationX  + 'px;';
 }
