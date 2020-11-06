@@ -28,10 +28,13 @@ function changeDirection(event) {
 
 function moveCar() {
   if (dirObj.direction === 'rotate-north') {
+    dirObj.locationY += 4;
   } else if (dirObj.direction === 'rotate-east') {
     dirObj.locationX += 4;
   } else if (dirObj.direction === 'rotate-south') {
+    dirObj.locationY -= 4;
   } else if (dirObj.direction === 'rotate-west') {
+    dirObj.locationX -= 4
   }
   car.style.cssText = 'top: ' + dirObj.locationY + 'px; left: ' +  dirObj.locationX  + 'px;';
 }
