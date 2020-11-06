@@ -16,7 +16,6 @@ function changeDirection(event) {
   car.className = 'car ' + dirObj.direction;
 
   if (event.code === 'Space') {
-    console.log('space clicked')
     setInterval(moveCar, 16);
   }
 }
