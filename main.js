@@ -1,4 +1,4 @@
-var dirObj = { direction: 'rotate-right', locationX: 0, locationY: 0, carMoving: false};
+var dirObj = { direction: 'rotate-right', locationX: 0, locationY: 0, carMoving: false, intervalID: null};
 
 
 var car = document.querySelector('.car');
@@ -17,8 +17,14 @@ function changeDirection(event) {
   car.className = 'car ' + dirObj.direction;
 
   if (event.code === 'Space') {
-    !carMoving;
-    setInterval(moveCar, 16);
+    console.log(dirObj.carMoving);
+    dirObj.carMoving = !dirObj.carMoving;
+    console.log(dirObj.carMoving);
+    if (dirObj.carMoving) {
+      dirObj.intervalID = setInterval(moveCar, 16);
+    } else {
+      clearInterval(dirObj.intervalID);
+    }
   }
 }
 
